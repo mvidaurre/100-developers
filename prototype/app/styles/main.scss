@@ -3,3 +3,19 @@
 @import "app/assets/stylesheets/bourbon";
 
 //Your Custom Styles bellow
+
+.row {
+  height:  1em;
+}
+
+input[type=checkbox] {
+   opacity:  0;
+}
+
+.answer, .alert {
+  opacity:  0;
+}
+
+input[type=checkbox]:checked ~ div.answer, input[type=checkbox]:checked ~ .alert  {
+  opacity:  1;
+}
